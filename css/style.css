@@ -1,7 +1,10 @@
 body {
   background-color: #f8f8f8;
 }
-
+::before,
+::after {
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -49,6 +52,7 @@ a {
   width: 100%;
   padding: 10px 0;
   box-shadow: 0 1px 2px 0 #ddd8d8;
+  z-index: 100;
 }
 #header .container {
   width: 95%;
@@ -97,6 +101,8 @@ a {
 
 #hero-content {
   padding: 80px 0;
+  position: relative;
+  top: 82px;
 }
 #hero-content .container {
   width: 75%;
@@ -306,24 +312,6 @@ h5 span {
   width: 75%;
   margin: 0 auto;
 }
-/* #services .content {
-  width: 100%;
-  padding: 0 15px;
-  margin-bottom: 50px;
-}
-#services .content p {
-  font-weight: 300px;
-  line-height: 24px;
-  margin-bottom: 8px;
-  color: #212529;
-}
-#services .content h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 64px;
-  margin-bottom: 8px;
-  color: #1ab394;
-} */
 #services .boxed {
   display: flex;
   flex-wrap: wrap;
@@ -331,7 +319,6 @@ h5 span {
 }
 #services .services-item {
   width: 380px;
-  /* height: 210px; */
   max-width: 33.333%;
   padding: 0 15px;
   margin-bottom: 30px;
@@ -339,7 +326,6 @@ h5 span {
 }
 #services .box {
   display: flex;
-  /* height: 180px; */
   border-radius: 20px;
 }
 #services .box .image img {
