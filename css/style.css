@@ -1,0 +1,227 @@
+body{
+  background-color: #f8f8f8;
+}
+
+/* css for header */
+
+#header{
+  background-color: #f8f8f8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 1px 2px 0 #ddd8d8;
+}
+#header .container{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+a{
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #4e4e4e;
+  line-height: 24px;
+}
+#header .header-logo{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #4e4e4e;
+}
+#header .header-logo a:hover{
+  color: #1ab394;
+  transition: 0.5s ease;
+}
+#header .header-logo span{
+  color: #1ab394;
+}
+#header .header-menu{
+  margin: auto 0;
+}
+#header .header-menu .menu{
+  display: flex;
+}
+.menu-item{
+  margin-left: 30px;
+}
+.menu-link:hover{
+  color: #1ab394;
+  transition: 0.5s ease;
+}
+#header .menu-item a:hover{
+  transition: 0.5s ease;
+}
+
+/* css for hero-content */
+
+#hero-content{
+  padding: 80px 0;
+}
+#hero-content .container{
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  height: 450px;
+}
+#hero-content .content-text{
+  width: 50%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero-content .content-text h1{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+#hero-content .content-text h1 span{
+  color: #1ab394;
+}
+#hero-content .content-text h4{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.8px;
+}
+#hero-content .content-text p{
+  font-weight: 300px;
+  line-height: 24px;
+  margin: 24px 0;
+  width: 400px;
+  color: #4e4e4e;
+}
+#hero-content .content-text .button{
+  padding: 10px 30px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 158px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #1ab394;
+  color: white;
+}
+#hero-content .content-text .button:hover{
+  background-color: #149e82;
+  transition: 0.3s ease;
+}
+#hero-content .content-img img{
+  border-radius: 50%;
+  box-shadow: 2px 4px 7px #b3babb;
+}
+
+/* css for about */
+
+#about{
+  padding: 100px 0 48px 0;
+}
+#about .container{
+  width: 75%;
+  height: 355px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#about .about-content{
+  width: 50%;
+  padding: 0 15px;
+}
+#about img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#about .about-content h2{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #149e82;
+}
+#about .about-content h5{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #343a40;
+  margin: 16px 0;
+}
+h5 span{
+  color: #1ab394;
+}
+.about-content .persola-info{
+  display: flex;
+}
+#about .persola-info .info{
+  width: 255px;
+}
+#about .info p{
+  margin-bottom: 16px;
+  line-height: 24px;
+  color: #4e4e4e;
+}
+#about .info span{
+  color: #212529;
+}
+#about .pill-download{
+  height: 44px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fafafa;
+  background-color: #1ab394;
+}
+#about .to-contact{
+  margin-left: 30px;
+}
+#about .pill-download:hover{
+  background-color: #149e82;
+  transition: 0.3s ease-in-out;
+}
+
+/* css dt */
+
+@media only screen and (max-width: 45em){
+  #header{
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  #hero-content .container{
+    width: 97%;
+    height: 750px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+  #hero-content .content-text{
+    width: auto;
+    text-align: center;
+  }
+  #hero-content .content-text p{
+    width: 100%;
+  }
+  #hero-content .content-img{
+    margin: 0 auto;
+  }
+  #hero-content .button{
+    margin: 0 auto;
+  }
+  #about .container{
+    width: 97%;
+    height: 800px;
+    flex-direction: column;
+  }
+  #about .about-content{
+    width: auto;
+  }
+}
