@@ -1,10 +1,48 @@
-body{
+body {
   background-color: #f8f8f8;
 }
 
-/* css for header */
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+p,
+a {
+  font-family: serif;
+}
 
-#header{
+/* css for all # .content */
+#skills .content,
+#services .content,
+#portfolio .content {
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 24px;
+}
+#skills .content p,
+#services .content p,
+#portfolio .content p {
+  font-weight: 300px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #212529;
+}
+#skills .content h2,
+#services .content h2,
+#portfolio .content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 8px;
+  color: #1ab394;
+}
+/* css for header */
+#header {
   background-color: #f8f8f8;
   position: fixed;
   top: 0;
@@ -12,89 +50,89 @@ body{
   padding: 10px 0;
   box-shadow: 0 1px 2px 0 #ddd8d8;
 }
-#header .container{
+#header .container {
   width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
 }
-a{
+a {
   font-family: sans-serif;
   text-decoration: none;
   color: #4e4e4e;
   line-height: 24px;
 }
-#header .header-logo{
+#header .header-logo {
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
   color: #4e4e4e;
 }
-#header .header-logo a:hover{
+#header .header-logo a:hover {
   color: #1ab394;
   transition: 0.5s ease;
 }
-#header .header-logo span{
+#header .header-logo span {
   color: #1ab394;
 }
-#header .header-menu{
+#header .header-menu {
   margin: auto 0;
 }
-#header .header-menu .menu{
+#header .header-menu .menu {
   display: flex;
 }
-.menu-item{
+.menu-item {
   margin-left: 30px;
 }
-.menu-link:hover{
+.menu-link:hover {
   color: #1ab394;
   transition: 0.5s ease;
 }
-#header .menu-item a:hover{
+#header .menu-item a:hover {
   transition: 0.5s ease;
 }
 
 /* css for hero-content */
 
-#hero-content{
+#hero-content {
   padding: 80px 0;
 }
-#hero-content .container{
+#hero-content .container {
   width: 75%;
   display: flex;
   margin: 0 auto;
   height: 450px;
 }
-#hero-content .content-text{
+#hero-content .content-text {
   width: 50%;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#hero-content .content-text h1{
+#hero-content .content-text h1 {
   font-size: 40px;
   font-weight: 500;
   line-height: 64px;
   margin-bottom: 16px;
 }
-#hero-content .content-text h1 span{
+#hero-content .content-text h1 span {
   color: #1ab394;
 }
-#hero-content .content-text h4{
+#hero-content .content-text h4 {
   font-size: 24px;
   font-weight: 500;
   line-height: 38.8px;
 }
-#hero-content .content-text p{
+#hero-content .content-text p {
   font-weight: 300px;
   line-height: 24px;
   margin: 24px 0;
   width: 400px;
   color: #4e4e4e;
 }
-#hero-content .content-text .button{
+#hero-content .content-text .button {
   padding: 10px 30px;
   font-weight: 300;
   line-height: 24px;
@@ -106,67 +144,67 @@ a{
   background-color: #1ab394;
   color: white;
 }
-#hero-content .content-text .button:hover{
+#hero-content .content-text .button:hover {
   background-color: #149e82;
   transition: 0.3s ease;
 }
-#hero-content .content-img img{
+#hero-content .content-img img {
   border-radius: 50%;
   box-shadow: 2px 4px 7px #b3babb;
 }
 
 /* css for about */
 
-#about{
+#about {
   padding: 100px 0 48px 0;
 }
-#about .container{
+#about .container {
   width: 75%;
   height: 355px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-#about .about-content{
+#about .about-content {
   width: 50%;
   padding: 0 15px;
 }
-#about img{
+#about img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-#about .about-content h2{
+#about .about-content h2 {
   font-size: 32px;
   font-weight: 700;
   line-height: 52px;
   color: #149e82;
 }
-#about .about-content h5{
+#about .about-content h5 {
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
   color: #343a40;
   margin: 16px 0;
 }
-h5 span{
+h5 span {
   color: #1ab394;
 }
-.about-content .persola-info{
+.about-content .persola-info {
   display: flex;
 }
-#about .persola-info .info{
+#about .persola-info .info {
   width: 255px;
 }
-#about .info p{
+#about .info p {
   margin-bottom: 16px;
   line-height: 24px;
   color: #4e4e4e;
 }
-#about .info span{
+#about .info span {
   color: #212529;
 }
-#about .pill-download{
+#about .pill-download {
   height: 44px;
   font-weight: 300;
   line-height: 24px;
@@ -179,49 +217,197 @@ h5 span{
   color: #fafafa;
   background-color: #1ab394;
 }
-#about .to-contact{
+#about .to-contact {
   margin-left: 30px;
 }
-#about .pill-download:hover{
+#about .pill-download:hover {
   background-color: #149e82;
   transition: 0.3s ease-in-out;
 }
 
+/* code của tao (Long)*/
+#skills {
+  padding: 48px 0;
+}
+#skills .container {
+  width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.content__group {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.content__group-title {
+  display: flex;
+  justify-content: space-between;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.content__group-skill {
+  position: relative;
+  width: 95%;
+  height: 10px;
+  background-color: #e1e1e1;
+  top: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.content__group-skill::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  background-color: rgb(255, 83, 128);
+}
+
+.group__title-percent {
+  margin-right: 30px;
+}
+
+.group__1 .content__group-skill::before {
+  width: 90%;
+}
+
+.group__2 .content__group-skill::before {
+  background-color: rgb(251, 221, 98);
+  width: 85%;
+}
+
+.group__3 .content__group-skill::before {
+  background-color: rgb(251, 221, 98);
+}
+
+.group__4 .content__group-skill::before {
+  background-color: rgb(11, 206, 175);
+  width: 80%;
+}
+
+.group__5 .content__group-skill::before {
+  background-color: rgb(11, 206, 175);
+  width: 70%;
+}
+#skills .container_fuild {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+/* css for services */
+#services {
+  padding: 48px 0;
+}
+#services .container {
+  width: 75%;
+  margin: 0 auto;
+}
+/* #services .content {
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+#services .content p {
+  font-weight: 300px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #212529;
+}
+#services .content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 8px;
+  color: #1ab394;
+} */
+#services .boxed {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+#services .services-item {
+  width: 380px;
+  /* height: 210px; */
+  max-width: 33.333%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+#services .box {
+  display: flex;
+  /* height: 180px; */
+  border-radius: 20px;
+}
+#services .box .image img {
+  width: 50px;
+  height: 50px;
+  min-width: 30%;
+  margin: 30px 10px 0 10px;
+  border-radius: 50%;
+}
+#services .box .image img:hover {
+  transform: rotateY(360deg);
+  transition: 0.9s ease;
+}
+#services .box .text-box {
+  width: 70%;
+  margin: 25px 0;
+  font-weight: 300;
+  line-height: 24px;
+  /* width: 250px; */
+  color: white;
+}
+#services .boxed .text-box h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+#services .box-yellow h5 {
+  color: #3c3c3c;
+}
+#services .box-yellow p {
+  color: #4e4e4e;
+}
 /* css dt */
 
-@media only screen and (max-width: 45em){
-  #header{
+@media only screen and (max-width: 45em) {
+  #header {
     background-color: #f8f8f8;
     position: fixed;
     top: 0;
     width: 100%;
   }
-  #hero-content .container{
+  #hero-content .container {
     width: 97%;
     height: 750px;
     padding-bottom: 8px;
     margin: 0 auto;
     flex-direction: column-reverse;
   }
-  #hero-content .content-text{
+  #hero-content .content-text {
     width: auto;
     text-align: center;
   }
-  #hero-content .content-text p{
+  #hero-content .content-text p {
     width: 100%;
   }
-  #hero-content .content-img{
+  #hero-content .content-img {
     margin: 0 auto;
   }
-  #hero-content .button{
+  #hero-content .button {
     margin: 0 auto;
   }
-  #about .container{
+  #about .container {
     width: 97%;
     height: 800px;
     flex-direction: column;
   }
-  #about .about-content{
+  #about .about-content {
     width: auto;
   }
 }
