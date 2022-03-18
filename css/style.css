@@ -238,7 +238,8 @@ h5 span {
 }
 
 #about .persola-info .info {
-  width: 255px;
+  max-width: 50%;
+  width: 225px;
 }
 
 #about .info p {
@@ -594,7 +595,7 @@ h5 span {
 } */
 
 /* css for ipad */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   /* css for hero-content */
   #hero-content {
     padding: 30px 0;
@@ -636,7 +637,12 @@ h5 span {
     width: 100%;
     padding-top: 20px;
   }
-
+  #about .persola-info {
+    width: 100%;
+  }
+  #about .persola-info .info {
+    width: 40%;
+  }
   /* css for skills */
   #skills .container {
     height: auto;
