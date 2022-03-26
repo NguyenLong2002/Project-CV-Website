@@ -279,3 +279,68 @@ body {
   text-align: center;
   color: black;
 }
+
+/* css for ipad */
+@media only screen and (max-width: 1180px) {
+  /* css for content */
+  #content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #content .about {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #content .about-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+    margin-left: 0;
+  }
+  /* css for listofmembers */
+
+  #listofmembers {
+    height: auto;
+  }
+  .merbers-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .merbers-list .merbers-item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .merbers-list .merbers-item .merbers-img {
+    width: 40%;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .merbers-body {
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .merber-desc,
+  .merber-introduce,
+  .merber-age {
+    margin-top: 30px;
+  }
+
+  /* css for contact */
+
+  #contact .name-email {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .name-email .fullname {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #contact .name-email .email {
+    width: 100%;
+  }
+}
