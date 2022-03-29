@@ -266,6 +266,9 @@ h5 span {
   background-color: #1ab394;
 }
 
+#about .about-img{
+  padding: 0 15px;
+}
 #about .to-contact {
   margin-left: 30px;
 }
@@ -555,6 +558,77 @@ h5 span {
   color: #6c757d;
 }
 
+/* css for contact */
+#contact {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#contact .contact-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#contact .name-email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#contact .name-email .fullname,
+#contact .name-email .email {
+  width: 48%;
+}
+.email #email,
+.fullname #name {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  background-color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px gray;
+}
+.subject {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.subject #subject {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  background-color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px gray;
+}
+.message #message {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  background-color: #fefefe;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 2px gray;
+}
+.button-contact a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fafafa;
+  background-color: #1ab394;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button-contact :hover {
+  background-color: rgb(3, 110, 96);
+}
+
+.contact-content,
+#contact-form{
+  padding: 0 15px;
+}
 /* css dt */
 
 /* @media only screen and (max-width: 45em) {
