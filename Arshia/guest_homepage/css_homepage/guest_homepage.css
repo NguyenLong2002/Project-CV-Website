@@ -40,7 +40,7 @@ body {
 #slider {
   position: relative;
   height: 750px;
-  background: url("/guest_homepage/images_homepage/anhtrangchu.jpg") top center /
+  background: url("../images_homepage/anhtrangchu.jpg") top center /
     cover no-repeat;
 }
 

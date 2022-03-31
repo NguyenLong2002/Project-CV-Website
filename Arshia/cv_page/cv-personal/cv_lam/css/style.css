@@ -577,16 +577,6 @@ h5 span {
 #contact {
     width: 75%;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-#contact .contact-content h1 {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 52px;
-    text-align: center;
-    margin-bottom: 30px;
 }
 
 #contact .name-email {
@@ -603,7 +593,7 @@ h5 span {
 
 .email #email,
 .fullname #name {
-    width: 100%;
+    width: 98%;
     padding: 15px 5px;
     border: none;
     background-color: #fefefe;
@@ -617,7 +607,7 @@ h5 span {
 }
 
 .subject #subject {
-    width: 100%;
+    width: 99%;
     padding: 15px 5px;
     border: none;
     background-color: #fefefe;
@@ -626,7 +616,7 @@ h5 span {
 }
 
 .message #message {
-    width: 100%;
+    width: 99%;
     padding: 10px 5px;
     border: none;
     background-color: #fefefe;
@@ -784,5 +774,22 @@ h5 span {
     #getintouch .contact-list {
         width: 100%;
         margin-bottom: 40px;
+    }
+
+    /* css for contact */
+    #contact {
+        height: auto;
+        width: 90%;
+      }
+    #contact .name-email {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .name-email .fullname {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact .name-email .email {
+        width: 100%;
     }
 }
