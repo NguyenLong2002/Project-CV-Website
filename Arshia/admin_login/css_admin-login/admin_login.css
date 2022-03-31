@@ -1,0 +1,81 @@
+body{
+   
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(124, 197, 226);
+}
+
+#admin{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 625px;
+}
+#container{
+    width: 600px;
+    height: 460px;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+}
+.main{
+    width: 85%;
+    margin: 60px;
+}
+.main h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none solid;
+    text-transform: uppercase;
+    color: #4285f4;
+    padding: 4px 0;
+    margin-bottom: 45px;
+}
+label{
+    color: #767a80;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+.form-box{
+    margin-bottom: 20px;
+}
+.input{
+    font-weight: 500;
+    width: 92%;
+    height: 22px;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 3px;
+}
+.box{
+    margin-bottom: 20px;
+}
+.input-box{
+    
+}
+a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #4285f4;
+}
+a:hover{
+    color: #666a70;
+}
+button{
+    background: #4285F4;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}
