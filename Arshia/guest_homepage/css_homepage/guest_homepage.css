@@ -5,7 +5,7 @@
     body {
         background-color: #f8f8f8;
     }
-    
+    /* css for header */
     #header {
         position: fixed;
         width: 100%;
@@ -13,22 +13,19 @@
         background-color: rgb(32, 31, 31);
         box-shadow: 0 1px 3px rgb(102, 102, 102);
         z-index: 100;
+        overflow: hidden;
     }
-    
     #header .container {
         width: 80%;
         margin: auto;
         justify-content: space-between;
         display: flex;
     }
-    
-    #nav,
-    #admin {
+    #nav {
         display: flex;
+        width: 100%;
     }
-    
-    #nav li a,
-    #admin li a {
+    #nav li a {
         color: aliceblue;
         text-decoration: none;
         line-height: 46px;
@@ -36,11 +33,15 @@
         display: inline-block;
         text-transform: uppercase;
     }
-    
-    #nav li:hover a,
-    #admin li:hover a {
+    ul li:last-of-type{
+        margin-left: auto;
+    }
+    #nav li:hover a {
         color: #000;
         background-color: #ccc;
+    }
+    .icon{
+        display: none;
     }
     /* CSS slider */
     
@@ -66,14 +67,14 @@
     /* CSS content */
     
     #content .content-section,
-    #ListofMerbers .content-section {
+    #ListofMembers .content-section {
         width: 100%;
         padding: 50px 0;
         text-align: center;
     }
     
     #content .content-section h1,
-    #ListofMerbers .content-section h1 {
+    #ListofMembers .content-section h1 {
         font-size: 60px;
         font-weight: 700;
         line-height: 52px;
@@ -129,13 +130,13 @@
         font-weight: 500;
         margin: 20px 0 0 30px;
     }
-    /* CSS ListofMerbers */
+    /* CSS ListofMembers */
     
-    #ListofMerbers {
+    #ListofMembers {
         margin-top: 80px;
     }
     
-    .merbers-body {
+    .members-body {
         margin-top: 20px;
         width: 100%;
     }
@@ -151,19 +152,19 @@
         margin-top: 15px;
     }
     
-    .merbers-list {
+    .members-list {
         width: 75%;
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
     }
     
-    .merbers-list .merbers-item {
+    .members-list .members-item {
         width: 28%;
         height: auto;
     }
     
-    .merbers-list .merbers-item .merbers-img {
+    .members-list .members-item .members-img {
         width: 100%;
         height: 283px;
         border-radius: 20px;
@@ -306,9 +307,28 @@
         text-align: center;
         color: black;
     }
+
     /* css for ipad */
-    
     @media only screen and (max-width: 1180px) {
+        #header .container{
+            width: 90%;
+            height: auto;
+        }
+        #nav{
+            display: block;
+        }
+        .icon{
+            display: block;
+            color: white;
+            font-size: 20px;
+            height: 46px;
+            cursor: pointer;
+            padding: 0 15px;
+        }
+        .fa-solid{
+            display: flex;
+            line-height: 46px;
+        }
         /* css for content */
         #content {
             height: auto;
@@ -331,21 +351,21 @@
         #listofmembers {
             height: auto;
         }
-        .merbers-list {
+        .members-list {
             display: flex;
             flex-direction: column;
         }
-        .merbers-list .merbers-item {
+        .members-list .members-item {
             display: flex;
             width: 100%;
             margin-bottom: 40px;
         }
-        .merbers-list .merbers-item .merbers-img {
+        .members-list .members-item .members-img {
             width: 40%;
             height: 250px;
             border-radius: 20px;
         }
-        .merbers-body {
+        .members-body {
             width: 60%;
             margin-top: 10px;
             margin-left: 30px;
@@ -368,3 +388,121 @@
             width: 100%;
         }
     }
+
+/* css for mobile */
+@media (max-width: 740px){
+    #header .container{
+        width: 90%;
+        height: auto;
+    }
+    #nav{
+        display: block;
+    }
+    .icon{
+        display: block;
+        color: white;
+        font-size: 20px;
+        height: 46px;
+        cursor: pointer;
+        padding: 0 15px;
+    }
+    .fa-solid{
+        display: flex;
+        line-height: 46px;
+    }
+    #slider{
+        height: 350px;
+    }
+    /* css for content */
+    #content{
+        margin-top: 0px;
+    }
+    #content .content-section {
+        width: 100%;
+        padding: 21px 0;
+        text-align: center;
+    }
+    #content .content-section h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .about{
+        width: 85%;
+    }
+    .about-info{
+        text-align: left ;
+        margin-left: 10px;
+    }
+    .about-content h2{
+        display: none;
+    }
+    .about-content h5{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    /* css for listofmembers */
+    #ListofMembers {
+        margin-top: 40px;
+    }
+    #ListofMembers .content-section {
+        padding: 25px 0;
+    }
+    #ListofMembers .content-section h1 {
+        font-size: 40px;
+    }
+    .members-list{
+        width: 85%;
+    }
+    .members-list .members-item {
+        display: block;
+    }
+    .members-list .members-item .members-img {
+        width: 100%;
+    }
+    .members-body {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+    }
+    .merber-desc,
+    .merber-introduce, .merber-age {
+    margin-top: 15px;
+    } 
+    .merber-heading {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }  
+    .merber-introduce{
+        line-height: 20px;
+    }
+    .button{
+        text-align: center;
+    }
+    /* css for contact */
+    #contact {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    /* css for follow */
+    .follow{
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    left: 0px;
+    }
+    .follow-social{
+        display: flex;
+    }
+    .follow-label{
+        position: relative;
+        transform: none;
+    }
+    .follow-social a{
+        margin-left: 15px;
+    }
+}
