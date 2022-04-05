@@ -54,6 +54,7 @@ a {
   color: #1ab394;
 }
 
+
 /* css for header */
 
 #header {
@@ -61,9 +62,11 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 50px;
   padding: 10px 0;
   box-shadow: 0 1px 2px 0 #ddd8d8;
   z-index: 100;
+  overflow: hidden;
 }
 
 #header .container {
@@ -97,11 +100,18 @@ a {
   color: #1ab394;
 }
 
+.icon {
+  display: none;
+}
+
 #header .header-menu {
-  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #header .header-menu .menu {
+  margin-top: 12px;
   display: flex;
 }
 
@@ -185,9 +195,11 @@ a {
 }
 
 #hero-content .content-img img {
+  width: 480px;
   border-radius: 50%;
   box-shadow: 2px 4px 7px #b3babb;
 }
+
 
 /* css for about */
 
@@ -266,9 +278,10 @@ h5 span {
   background-color: #1ab394;
 }
 
-#about .about-img{
+#about .about-img {
   padding: 0 15px;
 }
+
 #about .to-contact {
   margin-left: 30px;
 }
@@ -277,6 +290,7 @@ h5 span {
   background-color: #149e82;
   transition: 0.3s ease-in-out;
 }
+
 
 /* css for skills*/
 
@@ -356,6 +370,7 @@ h5 span {
   padding: 0 15px;
 }
 
+
 /* css for services */
 
 #services {
@@ -422,6 +437,7 @@ h5 span {
 #services .box-yellow p {
   color: #4e4e4e;
 }
+
 
 /* css for portfolio */
 
@@ -502,6 +518,7 @@ h5 span {
   margin-right: 30px;
 }
 
+
 /* CSS for Get in touch */
 
 #getintouch {
@@ -513,9 +530,11 @@ h5 span {
   width: 75%;
   margin: 0 auto;
 }
+
 #getintouch .container .map {
   padding: 0 15px;
 }
+
 .map iframe {
   width: 100%;
   height: 450px;
@@ -538,6 +557,7 @@ h5 span {
 .contact-item {
   display: flex;
 }
+
 .contact-item img {
   align-items: center;
   width: 25px;
@@ -562,16 +582,8 @@ h5 span {
 #contact {
   width: 75%;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
-#contact .contact-content h1 {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 52px;
-  text-align: center;
-  margin-bottom: 30px;
-}
+
 #contact .name-email {
   width: 100%;
   display: flex;
@@ -583,29 +595,33 @@ h5 span {
 #contact .name-email .email {
   width: 48%;
 }
+
 .email #email,
 .fullname #name {
-  width: 100%;
+  width: 98%;
   padding: 15px 5px;
   border: none;
   background-color: #fefefe;
   border-radius: 20px;
   box-shadow: 0 1px 2px gray;
 }
+
 .subject {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .subject #subject {
-  width: 100%;
+  width: 99%;
   padding: 15px 5px;
   border: none;
   background-color: #fefefe;
   border-radius: 20px;
   box-shadow: 1px 1px 2px gray;
 }
+
 .message #message {
-  width: 100%;
+  width: 99%;
   padding: 10px 5px;
   border: none;
   background-color: #fefefe;
@@ -613,6 +629,7 @@ h5 span {
   margin-bottom: 40px;
   box-shadow: 1px 1px 2px gray;
 }
+
 .button-contact a {
   text-decoration: none;
   padding: 10px 20px;
@@ -621,140 +638,286 @@ h5 span {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .button-contact :hover {
   background-color: rgb(3, 110, 96);
 }
 
 .contact-content,
-#contact-form{
+#contact-form {
   padding: 0 15px;
 }
+
+
 /* css dt */
 
-/* @media only screen and (max-width: 45em) {
-    #header {
-        background-color: #f8f8f8;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    #hero-content .container {
-        width: 97%;
-        height: 750px;
-        padding-bottom: 8px;
-        margin: 0 auto;
-        flex-direction: column-reverse;
-    }
-    #hero-content .content-text {
-        width: auto;
-        text-align: center;
-    }
-    #hero-content .content-text p {
-        width: 100%;
-    }
-    #hero-content .content-img {
-        margin: 0 auto;
-    }
-    #hero-content .button {
-        margin: 0 auto;
-    }
-    #about .container {
-        width: 97%;
-        height: 800px;
-        flex-direction: column;
-    }
-    #about .about-content {
-        width: auto;
-    }
-} */
-/* css for ipad */
-@media only screen and (max-width: 1180px) {
-  /* css for hero-content */
+
+@media only screen and (max-width: 420px) {
+  html {
+      width: fit-content;
+  }
+
+  #header .header-menu {
+      display: block;
+  }
+
+  #header .header-menu .menu {
+      display: block;
+  }
+
+  .menu-item:hover {
+      background-color: #b3babb;
+      transition: 0.2s ease;
+  }
+
+  .menu-item {
+      margin: 0;
+      /* border-bottom: 1px solid rgb(155, 151, 151); */
+  }
+
+  .menu-item a {
+      border-bottom: 1px solid rgb(155, 151, 151);
+  }
+
+  .icon {
+      display: block;
+  }
+
   #hero-content {
-    padding: 30px 0;
+      padding-top: 13px;
   }
 
   #hero-content .container {
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column-reverse;
+      width: 100%;
+      height: 750px;
+      padding-bottom: 8px;
+      margin: 0 auto;
+      flex-direction: column-reverse;
   }
-  #hero-content .content-img {
-    margin: 0 auto;
-  }
+
   #hero-content .content-text {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 20px;
-    align-items: center;
+      width: auto;
+      text-align: center;
   }
+
   #hero-content .content-text p {
-    width: 70%;
-    text-align: center;
+      width: 100%;
   }
+
+  #hero-content .content-img {
+      margin: 0 auto;
+  }
+
+  #hero-content .button {
+      margin: 0 auto;
+  }
+
+  #about .container {
+      width: 97%;
+      height: 800px;
+      flex-direction: column;
+  }
+
+  #about .about-content {
+      width: auto;
+  }
+
+  #skills .container {
+      width: auto;
+  }
+
+  #skills .container_fuild {
+      flex-direction: column;
+  }
+
+  .content__group {
+      width: 90%;
+  }
+
+  #services .container {
+      width: auto;
+  }
+
+  .boxed {
+      flex-direction: column;
+  }
+
+  #portfolio .container {
+      width: 100%;
+  }
+
+  #getintouch .container {
+      width: 100%;
+  }
+
+  #services .box {
+      width: 460px;
+  }
+
+  #getintouch .container .map {
+      padding: 0 3px;
+  }
+
+  #contact-form {
+      padding: 0;
+  }
+}
+
+
+/* css for ipad */
+
+@media only screen and (min-width: 420px) and (max-width: 1180px) {
+
+  #header .header-menu {
+      display: block;
+  }
+
+  #header .header-menu .menu {
+      display: block;
+  }
+
+  .menu-item:hover {
+      background-color: #b3babb;
+      transition: 0.2s ease;
+  }
+
+  .menu-item {
+      margin: 0;
+      /* border-bottom: 1px solid rgb(155, 151, 151); */
+  }
+
+  .menu-item a {
+      border-bottom: 1px solid rgb(155, 151, 151);
+  }
+
+  .icon {
+      display: block;
+  }
+
+  #hero-content {
+      padding: 30px 0;
+  }
+
+  #hero-content .container {
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  #hero-content .content-img {
+      margin: 0 auto;
+  }
+
+  #hero-content .content-text {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 20px;
+      align-items: center;
+  }
+
+  #hero-content .content-text p {
+      width: 70%;
+      text-align: center;
+  }
+
   /* css for about */
   #about {
-    padding: 150px 0 68px 0;
+      padding: 150px 0 68px 0;
   }
+
   #about .container {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    height: auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      height: auto;
   }
+
   #about .about-img {
-    width: 100%;
+      width: 100%;
   }
+
   #about .about-content {
-    width: 100%;
-    padding-top: 20px;
+      width: 100%;
+      padding-top: 20px;
   }
+
   #about .persola-info {
-    width: 100%;
+      width: 100%;
   }
+
   #about .persola-info .info {
-    width: 40%;
+      width: 40%;
   }
+
   /* css for skills */
   #skills .container {
-    height: auto;
-    width: 90%;
+      height: auto;
+      width: 90%;
   }
+
   #skills .content__group {
-    width: 100%;
+      width: 100%;
   }
+
   /* css foc services */
   #services .container {
-    height: auto;
-    width: 90%;
+      height: auto;
+      width: 90%;
   }
+
   #services .services-item {
-    min-width: 100%;
+      min-width: 100%;
   }
+
   #services .services-item .box .text-box {
-    width: 100%;
+      width: 100%;
   }
+
   /* css for portfolio */
   #portfolio .container {
-    height: auto;
-    width: 90%;
+      height: auto;
+      width: 90%;
   }
+
   #portfolio .portfolio-items .portfolio-item {
-    min-width: 100%;
+      min-width: 100%;
   }
+
   /* css for get in touch */
   #getintouch .container {
-    height: auto;
-    width: 90%;
+      height: auto;
+      width: 90%;
   }
+
   #getintouch .contact {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
   }
+
   #getintouch .contact-list {
-    width: 100%;
-    margin-bottom: 40px;
+      width: 100%;
+      margin-bottom: 40px;
+  }
+
+  /* css for contact */
+  #contact {
+      height: auto;
+      width: 90%;
+  }
+
+  #contact .name-email {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #contact .name-email .fullname {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  #contact .name-email .email {
+      width: 100%;
   }
 }

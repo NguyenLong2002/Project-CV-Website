@@ -22,7 +22,6 @@ a {
     font-family: serif;
 }
 
-
 /* css for all # .content */
 
 #skills .content,
@@ -63,9 +62,11 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 50px;
     padding: 10px 0;
     box-shadow: 0 1px 2px 0 #ddd8d8;
     z-index: 100;
+    overflow: hidden;
 }
 
 #header .container {
@@ -99,11 +100,18 @@ a {
     color: #1ab394;
 }
 
+.icon {
+    display: none;
+}
+
 #header .header-menu {
-    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #header .header-menu .menu {
+    margin-top: 12px;
     display: flex;
 }
 
@@ -119,7 +127,6 @@ a {
 #header .menu-item a:hover {
     transition: 0.5s ease;
 }
-
 
 /* css for hero-content */
 
@@ -571,9 +578,7 @@ h5 span {
     color: #6c757d;
 }
 
-
 /* css for contact */
-
 #contact {
     width: 75%;
     margin: 0 auto;
@@ -647,130 +652,250 @@ h5 span {
 /* css dt */
 
 
-/* @media only screen and (max-width: 45em) {
-    #header {
-        background-color: #f8f8f8;
-        position: fixed;
-        top: 0;
-        width: 100%;
+@media only screen and (max-width: 420px) {
+    html {
+        width: fit-content;
     }
+
+    #header .header-menu {
+        display: block;
+    }
+
+    #header .header-menu .menu {
+        display: block;
+    }
+
+    .menu-item:hover {
+        background-color: #b3babb;
+        transition: 0.2s ease;
+    }
+
+    .menu-item {
+        margin: 0;
+        /* border-bottom: 1px solid rgb(155, 151, 151); */
+    }
+
+    .menu-item a {
+        border-bottom: 1px solid rgb(155, 151, 151);
+    }
+
+    .icon {
+        display: block;
+    }
+
+    #hero-content {
+        padding-top: 13px;
+    }
+
     #hero-content .container {
-        width: 97%;
+        width: 100%;
         height: 750px;
         padding-bottom: 8px;
         margin: 0 auto;
         flex-direction: column-reverse;
     }
+
     #hero-content .content-text {
         width: auto;
         text-align: center;
     }
+
     #hero-content .content-text p {
         width: 100%;
     }
+
     #hero-content .content-img {
         margin: 0 auto;
     }
+
     #hero-content .button {
         margin: 0 auto;
     }
+
     #about .container {
         width: 97%;
         height: 800px;
         flex-direction: column;
     }
+
     #about .about-content {
         width: auto;
     }
-} */
+
+    #skills .container {
+        width: auto;
+    }
+
+    #skills .container_fuild {
+        flex-direction: column;
+    }
+
+    .content__group {
+        width: 90%;
+    }
+
+    #services .container {
+        width: auto;
+    }
+
+    .boxed {
+        flex-direction: column;
+    }
+
+    #portfolio .container {
+        width: 100%;
+    }
+
+    #getintouch .container {
+        width: 100%;
+    }
+
+    #services .box {
+        width: 460px;
+    }
+
+    #getintouch .container .map {
+        padding: 0 3px;
+    }
+
+    #contact-form {
+        padding: 0;
+    }
+}
 
 
 /* css for ipad */
 
-@media only screen and (max-width: 1180px) {
-    /* css for hero-content */
+@media only screen and (min-width: 420px) and (max-width: 1180px) {
+
+    #header .header-menu {
+        display: block;
+    }
+
+    #header .header-menu .menu {
+        display: block;
+    }
+
+    .menu-item:hover {
+        background-color: #b3babb;
+        transition: 0.2s ease;
+    }
+
+    .menu-item {
+        margin: 0;
+        /* border-bottom: 1px solid rgb(155, 151, 151); */
+    }
+
+    .menu-item a {
+        border-bottom: 1px solid rgb(155, 151, 151);
+    }
+
+    .icon {
+        display: block;
+    }
+
     #hero-content {
         padding: 30px 0;
     }
+
     #hero-content .container {
         width: 90%;
         height: auto;
         display: flex;
         flex-direction: column-reverse;
     }
+
     #hero-content .content-img {
         margin: 0 auto;
     }
+
     #hero-content .content-text {
         width: 100%;
         margin: 0 auto;
         padding-top: 20px;
         align-items: center;
     }
+
     #hero-content .content-text p {
         width: 70%;
         text-align: center;
     }
+
     /* css for about */
     #about {
         padding: 150px 0 68px 0;
     }
+
     #about .container {
         width: 90%;
         display: flex;
         flex-direction: column;
         height: auto;
     }
+
     #about .about-img {
         width: 100%;
     }
+
     #about .about-content {
         width: 100%;
         padding-top: 20px;
     }
+
     #about .persola-info {
         width: 100%;
     }
+
     #about .persola-info .info {
         width: 40%;
     }
+
     /* css for skills */
     #skills .container {
         height: auto;
         width: 90%;
     }
+
     #skills .content__group {
         width: 100%;
     }
+
     /* css foc services */
     #services .container {
         height: auto;
         width: 90%;
     }
+
     #services .services-item {
         min-width: 100%;
     }
+
     #services .services-item .box .text-box {
         width: 100%;
     }
+
     /* css for portfolio */
     #portfolio .container {
         height: auto;
         width: 90%;
     }
+
     #portfolio .portfolio-items .portfolio-item {
         min-width: 100%;
     }
+
     /* css for get in touch */
     #getintouch .container {
         height: auto;
         width: 90%;
     }
+
     #getintouch .contact {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
+
     #getintouch .contact-list {
         width: 100%;
         margin-bottom: 40px;
@@ -780,15 +905,18 @@ h5 span {
     #contact {
         height: auto;
         width: 90%;
-      }
+    }
+
     #contact .name-email {
         display: flex;
         flex-direction: column;
     }
+
     #contact .name-email .fullname {
         width: 100%;
         margin-bottom: 30px;
     }
+
     #contact .name-email .email {
         width: 100%;
     }
