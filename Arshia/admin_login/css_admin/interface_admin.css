@@ -1,0 +1,137 @@
+body {
+    font-family: "Roboto", sans-serif;
+    
+}
+
+#interface {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #EEE;
+    border: 1px #ccc solid;
+    color: #000;
+    border-radius: 3px;
+    margin: 10px 100px;
+}
+
+.header h1 {
+    margin: 10px 20px;
+}
+
+.header-menu {
+    background-color: black;
+    color: #ccc;
+    border-radius: 3px;
+    margin: 0 100px;
+}
+
+.header-menu ul {
+    padding: 10px;
+}
+
+.header-menu ul li {
+    display: inline;
+    padding: 0 15px;
+    list-style-type: none;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.header-menu a:hover {
+    color: #fff;
+}
+
+.row {
+    background-color: #EEE;
+    color: #666;
+    border-radius: 3px;
+    margin: 0 100px;
+}
+
+.row-header h1 {
+    margin: 10px 20px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.row-from {
+    padding: 20px;
+}
+
+.row-from input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row-list {
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 60px;
+    background-color: #666;
+    color: #fff;
+}
+
+
+/* CSS List_cv */
+
+.row-list-ds table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row-list-ds table th:nth-child(1) {
+    width: 2%;
+}
+
+.row-list-ds table th:nth-child(2) {
+    width: 10%;
+}
+
+.row-list-ds table th:nth-child(3) {
+    width: 10%;
+}
+
+.row-list-ds table th:nth-child(4) {
+    width: 10%;
+}
+
+.row-list-ds table th:nth-child(5) {
+    width: 20%;
+}
+
+.row-list-ds table th:nth-child(6) {
+    width: 10%;
+}
+
+.row-list-ds table th:nth-child(7) {
+    width: 10%;
+}
+
+.row-list-ds table th:nth-child(8) {
+    width: 20%;
+}
+
+.row-list-ds table td {
+    padding: 10px 20px;
+    border: 1px #999 solid;
+    background-color: #fff;
+}
+
+/* css for add */
+#Add{
+    width: 100%;
+    position: absolute;
+    top: 103px;
+    display: none;
+}
+.row-add{
+    width: 67.5%;
+    margin: auto;
+}

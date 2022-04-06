@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interface</title>
+    <link rel="stylesheet" href="css_admin/reset.css">
+    <link rel="stylesheet" href="css_admin/interface_admin.css">
+</head>
+
+
+
+<body>
+    <div id="interface">
+        <div class="header">
+            <h1>Admin</h1>
+        </div>
+
+        <div class="header-menu">
+            <ul>
+                <li><a href="./interface_admin.html">Home</a></li>
+                <li><a href="#">tutorial</a></li>
+                <li><a href="#">back to site</a></li>
+
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="row-header">
+                <h1>List of CV</h1>
+            </div>
+
+            <div class="row-list-ds">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>FullName</th>
+                        <th>Position</th>
+                        <th>Date of Borned</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <span class="name"><td>Giang Văn Lâm</td></span>
+                        <td>Sinh Viên</td>
+                        <td>23/10/2002</td>
+                        <td>+84 389 210 188</td>
+                        <td>Van131361@gmail.com</td>
+                        <td>Khoái Châu,Hưng Yên</td>
+                        <td>
+                            <span id="edit"><input type="button" value="Edit"></span> <input type="button" value="Delete">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nguyễn Thành Long</td>
+                        <td>Sinh Viên</td>
+                        <td>01/10/2002</td>
+                        <td>+84 333 903 624</td>
+                        <td>lonlufyy@gmail.com</td>
+                        <td>Xuân Trường, Nam Định</td>
+                        <td>
+                            <span id="edit"><input type="button" value="Edit"></span> <input type="button" value="Delete">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Biện Anh Quân</td>
+                        <td>Sinh Viên</td>
+                        <td>02/01/2002</td>
+                        <td>+84 336 684 254</td>
+                        <td>bienanhquan7@gmail.com</td>
+                        <td>Nam Đàn, Nghệ An</td>
+                        <td>
+                            <span id="edit"><input type="button" value="Edit"></span> <input type="button" value="Delete">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- add -->
+    <div id="Add">
+        <div class="row row-add">
+            <div class="row-from">
+                <form action="#" method="post">
+                    <div class="row-list">
+                        STT<br>
+                        <input type="text" name="">
+                    </div>
+                    <div class="row-list">
+                        FullName<br>
+                        <input type="text" name="">
+                    </div>
+                    <div class="row-list">
+                        Position<br>
+                        <input type="text" name="">
+                    </div>
+                    <div class="row-list">
+                        Date of Borned<br>
+                        <input type="text" name="">
+                    </div>
+                    <div class="row-list">
+                        Phone<br>
+                        <input type="text" name="">
+                    </div>
+                    <div class="row-list">
+                        Email<br>
+                        <input type="text" name="">
+                    </div>
+                    <div class="row-list">
+                        Address<br>
+                        <input type="text" name="">
+                    </div>
+
+                    <div id="row-list">
+                        <span id="add-succeed"> <input class="button" type="button" value="Add"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js_admin/main.js"></script>
+</body>
+
+
+</html>
