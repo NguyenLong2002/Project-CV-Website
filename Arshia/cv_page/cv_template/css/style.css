@@ -111,11 +111,11 @@ a {
 }
 
 #header .header-menu .menu {
-  margin-top: 12px;
   display: flex;
 }
 
 .menu-item {
+  margin: auto;
   margin-left: 30px;
 }
 
@@ -662,6 +662,7 @@ h5 span {
   }
 
   #header .header-menu .menu {
+      padding-top: 12px;
       display: block;
   }
 
@@ -773,6 +774,7 @@ h5 span {
   }
 
   #header .header-menu .menu {
+      padding-top: 12px;
       display: block;
   }
 
