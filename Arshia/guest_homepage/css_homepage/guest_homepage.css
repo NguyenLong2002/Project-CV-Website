@@ -390,7 +390,7 @@
     }
 
 /* css for mobile */
-@media (max-width: 740px){
+@media (max-width: 400px){
     #header .container{
         width: 90%;
         height: auto;

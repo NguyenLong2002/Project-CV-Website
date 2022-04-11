@@ -114,3 +114,14 @@ button{
     color: #000;
     background-color: #ccc;
 }
+
+@media only screen and (max-width: 1180px) {
+    #header .container{
+        width: 90%;
+        height: auto;
+    }}
+@media (max-width: 400px) {
+        #container{
+            width: 390px;
+            height: auto;
+        }}
